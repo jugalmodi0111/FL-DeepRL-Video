@@ -1,21 +1,29 @@
+.DS_Store
+
 # Python
 __pycache__/
 *.py[cod]
-.Python
+*.so
 *.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual envs
+.venv/
+venv/
+.env
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Large files
-*.npz
-*.hdf5
-*.h5
+# Data & outputs (keep code reproducible; don't commit large artifacts)
 data/
-kinetics_data/
 results/
-drl_outputs/
+kinetics_data/
+path/to/results/
 
-# OS
-.DS_Store
-._*
+# Logs
+*.log
